@@ -1,0 +1,149 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    html {
+        width: 100%;
+        height: 100%;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 400;
+        color: #000000;
+        background: #FFFFFF;
+        
+       
+    }
+    
+    h1 {
+        color: #e8a07d;
+    }
+    
+    .container {
+        margin: 0 auto;
+        
+    }
+    
+    header {
+        margin: 20px 0;
+        
+    }
+    
+    header img {
+        width: 100%;
+    }
+    
+    aside {
+        float: left;
+        margin: 0 0 25px;
+    }
+    
+    aside nav ul {
+        list-style: none;
+    }
+    
+    aside nav ul li a {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+        background: #0d54c6;
+        padding: 8px 20px;
+    }
+    
+    aside nav ul li {
+        margin-bottom: 1px;
+    }
+    
+    aside nav ul li a:hover {
+        background: #000000;
+        color: #FFFFAF;
+    }
+    
+    #main {
+        float: right;
+        margin: 0 0 25px;
+        text-align: justify;
+        width: 50%;
+    }
+    
+    footer {
+        clear: both;
+        color: #FFFFFF;
+        background: #0d54c6;
+        padding: 15px 0 15px 30px;
+        margin: 20px 20px 20px;
+        text-align: center;
+    }
+    
+    aside {
+        width: 30%;
+    }
+    
+    #main {
+        width: 68%;
+    }
+    
+    .mobimin {
+        display: none;
+    }
+    
+    @media (min-width: 1200px) {
+        .container {
+            width: 1150px;
+        }
+    }
+    
+    @media (max-width: 1199px) and (min-width: 1000px) {
+        .container {
+            width: 950px;
+        }
+    }
+    
+    @media (max-width: 999px) and (min-width: 800px) {
+        .container {
+            width: 750px;
+        }
+    }
+    
+    @media (max-width: 799px) and (min-width: 600px) {
+        .container {
+            width: 550px;
+        }
+        aside,
+        #main {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 599px) {
+        .container {
+            width: 90%;
+        }
+        #main {
+            width: 100%;
+        }
+        .menu {
+            display: none;
+            position: absolute;
+            padding: 20px;
+            width: 250px;
+        }
+        .mobimin {
+            display: inline;
+            position: absolute;
+            margin: -15px 0 0 0;
+            color: #FFFFFF;
+            background: #0000FF;
+            font-size: 19px;
+            width: 25px;
+            height: 25px;
+            padding: 5px;
+            border-radius: 25px;
+            float: right;
+            text-align: center;
+        }
+    }
